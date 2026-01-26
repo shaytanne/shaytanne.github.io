@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | Shay Tanne</title>
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <h1 class="header-name">Shay Tanne</h1>
+    
+    <div class="nav-links">
+      <a href="{{ '/cv/' | relative_url }}">CV</a> |
+      <a href="https://github.com/shaytanne"><i class="fab fa-github"></i> GitHub</a> |
+      <a href="https://linkedin.com/in/shay-tanne"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+      <a href="mailto:shaytanne1@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+
+    <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Shay Tanne" class="profile-pic">
+
+    <div class="content-body">
+      {{ content }}
+    </div>
+
+  </div>
+
+</body>
+</html>

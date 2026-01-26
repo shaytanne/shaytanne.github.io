@@ -1,0 +1,101 @@
+/* GLOBAL RESET & TYPOGRAPHY */
+body {
+    background-color: #f5f5f5; /* "White Smoke" - Not stark white */
+    color: #333333;            /* Dark Charcoal - Softer than pure black */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTAINER - The "Paper" Effect */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center; /* Keeps header centered */
+}
+
+/* HEADERS - Serif adds the "Academic" feel */
+h1, h2, h3 {
+    font-family: "Georgia", "Times New Roman", serif;
+    color: #111;
+    margin-top: 40px;
+}
+
+/* HEADER NAME */
+.header-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* NAVIGATION LINKS */
+.nav-links {
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    font-family: -apple-system, sans-serif; /* Keep nav sans-serif for clarity */
+}
+
+.nav-links a {
+    color: #555; /* Subtle grey for inactive links */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #0055B7; /* "Academic Blue" on hover */
+    text-decoration: underline;
+}
+
+/* PROFILE PICTURE */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 40px;
+    
+    /* This shadow makes it "pop" off the light background */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); 
+    border: 4px solid #ffffff; /* White ring to separate image from background */
+}
+
+/* MAIN CONTENT BODY */
+.content-body {
+    text-align: left; /* Back to standard reading alignment */
+    font-size: 1.1rem;
+    color: #444; /* Slightly softer reading text */
+    background-color: #ffffff; /* Optional: Makes text area pure white "card" */
+    padding: 40px;             /* Padding inside the white card */
+    border-radius: 8px;        /* Soft rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Very subtle depth */
+}
+
+/* If you prefer NO white card (just text on the grey background), 
+   delete the 'background-color', 'padding', 'border-radius', and 'box-shadow' 
+   lines from .content-body above. */
+
+.content-body h2 {
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* LINKS IN TEXT */
+.content-body a {
+    color: #0055B7; /* "International Klein Blue" - Standard research blue */
+    text-decoration: none;
+    font-weight: 500;
+}
+.content-body a:hover { text-decoration: underline; }
+
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 600px) {
+    .content-body {
+        padding: 20px; /* Less padding on mobile */
+    }
+}

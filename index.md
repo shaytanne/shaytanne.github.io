@@ -1,39 +1,21 @@
-# Shay Tanne
-**MSc Computer Science Student | RL & Deep Learning Researcher**
-*Tel Aviv, Israel*
+---
+layout: default
+title: Home
+permalink: /
+---
 
-[CV (PDF)](LINK_TO_YOUR_GOOGLE_DRIVE_CV) | [GitHub](https://github.com/shaytanne) | [LinkedIn](https://linkedin.com/in/shay-tanne)
+Hello, I'm **Shay**.
+
+I am a **Software & Algorithm Engineer** specializing in developing deep learning tools for automated systems. Currently, I am pursuing my MSc in Computer Science at Reichman University. 
+
+My expertise lies in integrating advanced **computer vision models** with hardware systems to enable **smart automation**, such as the microscope control tools I built to facilitate the rapid structural tracking of COVID-19 variants.
+
+[cite_start]Previously, I worked at **General Motors**, developing analytical infrastructure for autonomous vehicle stacks[cite: 21, 22].
 
 ---
 
-## About Me
-I am a Computer Science MSc student specializing in **Reinforcement Learning**. I bring 3+ years of industrial R&D experience in **Deep Learning**, **Computer Vision**, and **Autonomous Driving** systems.
+### 🔬 **[Selected Research & Engineering →](./research)**
+A deep dive into my work on **Automated Cryo-EM Targeting**—the infrastructure that enabled research published in *Science* and *Nature Communications*.
 
-My work focuses on bridging the gap between theoretical RL concepts and robust, large-scale industrial deployment.
-
----
-
-## Research & Industry Experience
-
-### **General Motors (2022-2025)**
-*Algorithm Engineer, Perception Stack*
-* **Focus:** Performance analysis and evaluation of deep learning models for autonomous driving.
-* **Key Contribution:** Engineered automated pipelines using **PyTorch** to evaluate perception models on petabyte-scale datasets. Designed custom metrics for edge-case detection (occlusion, weather) that drove architectural decisions for the production AV stack.
-* **Tech:** PyTorch, Python, NumPy, Large-scale Data Analysis.
-
-### **Biotech Startup (Spin-off from UBC Lab)**
-*Computer Vision Researcher*
-* **Focus:** Automating Cryo-EM data collection using CNNs.
-* **Key Contribution:** Co-developed a computer vision tool for virus molecular classification. My work on the CNN architecture optimized data collection speed by 4-10x and was integrated into the startup's core commercial product.
-
----
-
-## Code & Projects
-
-**[1] Perception Evaluation Utilities (Technical Showcase)**
-* **[View Repository](LINK_TO_YOUR_PERCEPTION_REPO)**
-* *Description:* A technical demonstration of the PyTorch patterns and evaluation architectures I implemented in industry.
-* *Note:* Due to strict IP agreements with GM and previous employers, production source code cannot be released. This repository serves as a "clean room" implementation of similar utility classes.
-
-**[2] Reinforcement Learning Coursework**
-* *Description:* Current implementations of fundamental RL algorithms (DQN, PPO) as part of my MSc degree.
+### 🛠️ **[CV & Experience →](./cv)**
+[cite_start]My full professional history, including work at Microsoft Innovation Lab and command experience in the IDF[cite: 30, 35].
