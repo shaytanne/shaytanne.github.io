@@ -1,64 +1,54 @@
-/* --- PROFESSIONAL LIGHT THEME VARIABLES --- */
+/* --- VARIABLES --- */
 :root {
-    --bg-color: #f8f9fa;       /* "White Smoke" - Soft background */
-    --sidebar-bg: #ffffff;     /* Pure White - Clean separation */
-    --text-color: #333333;     /* Deep Charcoal - High readability */
-    --heading-color: #111111;  /* Near Black - Sharp headers */
-    --link-color: #0055B7;     /* "International Klein Blue" - Academic Standard */
-    --border-color: #eaeaea;   /* Very subtle borders */
+    --bg-color: #f8f9fa;
+    --sidebar-bg: #ffffff;
+    --text-color: #333333;
+    --heading-color: #111111;
+    --link-color: #0077cc;
+    --border-color: #eaeaea;
 }
 
 /* GLOBAL RESET */
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    /* Modern font for everything */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
 }
 
-a { color: var(--link-color); text-decoration: none; font-weight: 500; transition: color 0.2s; }
-a:hover { color: #003366; text-decoration: underline; }
+a { color: var(--link-color); text-decoration: none; transition: color 0.2s; }
+a:hover { text-decoration: underline; }
 
-/* --- MAIN GRID LAYOUT --- */
+/* --- WRAPPER (Sidebar + Content) --- */
 .wrapper {
     display: grid;
-    /* 260px Sidebar | The rest is content */
-    grid-template-columns: 260px 1fr; 
+    grid-template-columns: 260px 1fr;
     min-height: 100vh;
-    max-width: 1200px; /* Prevents it from getting too wide on huge screens */
-    margin: 0 auto;    /* Centers the whole site */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* --- SIDEBAR (Fixed Left) --- */
+/* --- SIDEBAR --- */
 .sidebar {
     background-color: var(--sidebar-bg);
     padding: 60px 30px;
     border-right: 1px solid var(--border-color);
-    
-    /* Make it sticky */
     position: sticky;
     top: 0;
-    height: 100vh; 
-    
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .sidebar-name {
-    font-family: "Georgia", serif; /* Serif font for Name looks classy */
-    font-size: 1.6rem;
+    font-size: 1.4rem; /* Slightly smaller in sidebar to not compete with main header */
     font-weight: 700;
     color: var(--heading-color);
     margin-bottom: 5px;
 }
-
-.sidebar-title {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 40px;
-}
+.sidebar-title { font-size: 0.9rem; color: #666; margin-bottom: 40px; }
 
 .nav-list {
     list-style: none;
@@ -68,17 +58,11 @@ a:hover { color: #003366; text-decoration: underline; }
     flex-direction: column;
     gap: 12px;
 }
+.nav-list a { color: #555; font-weight: 500; }
+.nav-list a:hover { color: var(--link-color); }
 
-.nav-list a {
-    color: #555; /* Neutral grey for unclicked links */
-    font-size: 1.05rem;
-}
-.nav-list a:hover {
-    color: var(--link-color); /* Blue on hover */
-}
-
-.social-links {
-    margin-top: auto; /* Push to bottom */
+.sidebar-socials {
+    margin-top: auto;
     padding-top: 20px;
     border-top: 1px solid var(--border-color);
     display: flex;
@@ -86,50 +70,54 @@ a:hover { color: #003366; text-decoration: underline; }
     font-size: 1.2rem;
 }
 
-/* --- MAIN CONTENT AREA --- */
+/* --- MAIN CONTENT --- */
 .main-content {
-    padding: 80px 100px; /* Spacious padding */
-    text-align: left;    /* Standard reading alignment */
-    max-width: 750px;    /* Optimal reading width */
-    margin: 0 auto;      /* Center the text block */
+    padding: 60px 100px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* Typography */
-h1, h2, h3 { color: var(--heading-color); margin-top: 40px; font-family: "Georgia", serif; }
-h1 { font-size: 2.5rem; margin-top: 0; }
-h2 { border-bottom: 1px solid var(--border-color); padding-bottom: 10px; font-size: 1.5rem; }
-
-/* The Profile Picture (For Home Page Only) */
-.home-profile-pic {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #fff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Soft shadow */
-    margin-bottom: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* MODERN HEADERS (The fix for your font request) */
+h1, h2, h3 {
+    color: var(--heading-color);
+    font-family: 'Inter', sans-serif; /* FORCE Modern Font */
+    letter-spacing: -0.03em; /* Tight tracking for modern look */
+    font-weight: 800;
 }
 
-/* Centered Header Text for Home Page */
+h1 { font-size: 3rem; margin-bottom: 10px; text-align: center; } /* Big centered Title */
+h2 { font-size: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-top: 40px; }
+
+/* --- HEADER (In index.md) --- */
 .home-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
-/* --- MOBILE RESPONSIVE --- */
+/* The row of links (CV | GitHub | Twitter) */
+.header-links {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: var(--link-color);
+}
+.header-links a { margin: 0 8px; font-weight: 600; }
+.header-links span { color: #ccc; } /* The divider pipes "|" */
+
+/* Profile Picture */
+.home-profile-pic {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* --- MOBILE --- */
 @media (max-width: 768px) {
     .wrapper { grid-template-columns: 1fr; }
-    .sidebar { 
-        height: auto; 
-        position: relative; 
-        border-right: none; 
-        border-bottom: 1px solid var(--border-color); 
-        padding: 30px;
-        text-align: center;
-    }
-    .nav-list, .social-links { justify-content: center; flex-direction: row; flex-wrap: wrap; gap: 20px;}
+    .sidebar { position: relative; height: auto; border-right: none; border-bottom: 1px solid #eee; text-align: center; }
     .main-content { padding: 40px 20px; }
+    h1 { font-size: 2.2rem; }
 }
