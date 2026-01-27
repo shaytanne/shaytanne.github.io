@@ -4,9 +4,9 @@ title: Research
 permalink: /research/
 ---
 
-# Research Contributions
+# Research
 
-**Focus:** Computer Vision, Scientific Automation
+**Focus:** Deep Learning, Computer Vision, Scientific Automation
 
 ---
 
@@ -35,15 +35,3 @@ _**Disclaimer:** I am not a co-author on the biological findings. My contributio
 [*Structural and biochemical rationale for enhanced spike protein fitness in delta and kappa SARS-CoV-2 variants* ](https://www.nature.com/articles/s41467-022-28324-6) \
 **Authors:** J Saville, D Mannar, X Zhu, S Srivastava, A Berezuk, J Demers, S Zhou, K Tuttle, I Sekirov, A Kim, W Li, D Dimitrov, S Subramaniam \
 **Journal:** *Nature Communications* (2022)
-
-### System Architecture
-
-<div class="mermaid">
-graph LR
-    A[Input: Low-Res Atlas] --> B(PyTorch CNN)
-    B --> C{Quality Heatmap}
-    C -->|Deterministic Policy| D[Microscope Coordinates]
-    D --> E[High-Res Acquisition]
-    style C fill:#f9f,stroke:#333,stroke-width:2px
-</div>
-
