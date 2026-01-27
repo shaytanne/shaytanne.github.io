@@ -47,6 +47,7 @@ a:hover { text-decoration: underline; }
     font-weight: 700;
     color: var(--heading-color);
     margin-bottom: 5px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 .sidebar-title { font-size: 0.9rem; color: #666; margin-bottom: 40px; }
 
