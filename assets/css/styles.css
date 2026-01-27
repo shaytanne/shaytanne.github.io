@@ -80,7 +80,8 @@ a:hover { text-decoration: underline; }
 /* MODERN HEADERS (The fix for your font request) */
 h1, h2, h3 {
     color: var(--heading-color);
-    font-family: 'Inter', sans-serif; /* FORCE Modern Font */
+    /* font-family: 'Inter', sans-serif; FORCE Modern Font */
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     letter-spacing: -0.03em; /* Tight tracking for modern look */
     font-weight: 800;
 }

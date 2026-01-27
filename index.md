@@ -7,8 +7,6 @@ permalink: /
 <div class="home-header">
     <h1>Shay Tanne</h1>
     <div class="header-links">
-        <a href="{{ '/cv/' | relative_url }}">CV</a>
-        <span>|</span>
         <a href="https://github.com/shaytanne">GitHub</a>
         <span>|</span>
         <a href="https://linkedin.com/in/shay-tanne">LinkedIn</a>
@@ -19,9 +17,9 @@ permalink: /
 
 </div>
 
-Hello, I'm **Shay**.
+Hello, I'm **Shay**.\
 I am a **Software & Algorithm Engineer** specializing in ML and performance analysis.\
-Currently in my MSc in Computer Science at Reichman University, focusing on Reinforcement Learning and NLP.\
-I have an interdisciplinary mindset and bring experience and know-how from across the spectrum of applied research - from full-stack development and SW engineering, to theory and analysis.
+Currently in my MSc in Computer Science at Reichman University, I'm focusing on Reinforcement Learning and NLP.\
+I have an interdisciplinary mindset and bring experience and know-how from across the spectrum of applied research - from theory and analysis to full-stack development and SW engineering.
 
-Previously, I worked on the Autonomous Driving project at **General Motors**, developing advanced analytical tools for evaluating the performance of various components of the AV stack.
+Previously, I worked on Autonomous Driving at **General Motors**, developing advanced analytical tools and workflows for evaluating the performance of various components of the AV stack.
