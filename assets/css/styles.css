@@ -12,8 +12,8 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    /* Modern font for everything */
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    /* font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; */
+    font-family: "Trebuchet MS", Helvetica, -apple-system, BlinkMacSystemFont,sans-serif;
     line-height: 1.6;
     margin: 0;
 }
@@ -78,12 +78,12 @@ a:hover { text-decoration: underline; }
     margin: 0 auto;
 }
 
-/* MODERN HEADERS (The fix for your font request) */
+/* MODERN HEADERS */
 h1, h2, h3 {
     color: var(--heading-color);
-    /* font-family: 'Inter', sans-serif; FORCE Modern Font */
+    /* font-family: 'Inter', sans-serif; */
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    letter-spacing: -0.03em; /* Tight tracking for modern look */
+    letter-spacing: -0.03em; 
     font-weight: 800;
 }
 
