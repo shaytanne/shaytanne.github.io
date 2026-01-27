@@ -10,7 +10,9 @@ permalink: /research/
 
 ---
 
-## 🔬 Technical Deep Dive: Automated Cryo-EM Targeting
+## Smart Automated Data Collection - Cryo-EM Imaging for Drug Development (2020-2021)
+
+### University of British Columbia - Program in Cryo-EM
 
 **Project:** Deep Learning for High-Throughput Microscope Guidance (2020–2021)  
 **Stack:** PyTorch (`torch.nn`, `torchvision`, `torch.utils.data`), OpenCV, NumPy
@@ -20,11 +22,11 @@ Cryo-EM data collection requires navigating a physical microscope to find rare, 
 
 ### System Architecture
 
-```mermaid
+<div class="mermaid">
 graph LR
     A[Input: Low-Res Atlas] --> B(PyTorch CNN)
     B --> C{Quality Heatmap}
     C -->|Deterministic Policy| D[Microscope Coordinates]
     D --> E[High-Res Acquisition]
     style C fill:#f9f,stroke:#333,stroke-width:2px
-```
+</div>
