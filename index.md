@@ -6,16 +6,14 @@ permalink: /
 
 Hello, I'm **Shay**.
 
-I am a **Software & Algorithm Engineer** specializing in developing deep learning tools for automated systems. Currently, I am pursuing my MSc in Computer Science at Reichman University. 
+I am a **Software & Algorithm Engineer** specializing in ML and performance analysis.\
+Currently in my MSc in Computer Science at Reichman University, focusing on Reinforcement Learning and NLP.\
+I have an interdisciplinary mindset and bring experience and know-how from across the spectrum of applied research - from full-stack development and SW engineering, to theory and analysis.
 
-My expertise lies in integrating advanced **computer vision models** with hardware systems to enable **smart automation**, such as the microscope control tools I built to facilitate the rapid structural tracking of COVID-19 variants.
-
-[cite_start]Previously, I worked at **General Motors**, developing analytical infrastructure for autonomous vehicle stacks[cite: 21, 22].
+Previously, I worked on the Autonomous Driving project at **General Motors**, developing advanced analytical tools for evaluating the performance autonomous vehicles.
 
 ---
 
-### 🔬 **[Selected Research & Engineering →](./research)**
-A deep dive into my work on **Automated Cryo-EM Targeting**—the infrastructure that enabled research published in *Science* and *Nature Communications*.
+### **[Research →](./research)**
 
-### 🛠️ **[CV & Experience →](./cv)**
-[cite_start]My full professional history, including work at Microsoft Innovation Lab and command experience in the IDF[cite: 30, 35].
+Details on research I've been involved with.

@@ -18,17 +18,18 @@ Software/algorithm engineer with a curious, interdisciplinary mindset and over 3
 ### Skills & Competencies
 
 **Proficiencies:**
-* **ML/DL Applications:** PyTorch, TensorFlow, Computer Vision, Algorithm Development
-* **Data Science & Performance Analysis:** NumPy, Pandas, etc.
+* **ML/DL & Data Science:** 
+    - Computer Vision, Reinforcement Learning, Algorithm Development, Performance Analysis
+    - Tools: PyTorch, TensorFlow, Keras, NumPy, Pandas, ...
 * **Full-stack Development & Data Visualization:** Dash, Plotly, Streamlit, Software System Design & Architecture
 
 **Tools & Platforms:**
 * **Cloud Platforms:** Azure, GCP
 * **Deployment:** Containerization, Backend Service Deployment & Scaling (Kubernetes)
-* **Databases:** Azure Data Explorer, MongoDB, Postgres
+* **Databases:** Azure Data Explorer, Postgres, MongoDB
 
 **Project Management:**
-* Jira, Scrum methodology, Git, Technical Documentation Practices
+* Jira, Scrum Methodology, Git, Technical Documentation Practices
 
 **Programming Languages:**
 * Python, JavaScript, Go, SQL/KQL, C/C++
