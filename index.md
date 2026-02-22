@@ -20,6 +20,6 @@ permalink: /
 Hello, I'm **Shay**.
 
 I am a **Software & Algorithm Engineer** specializing in ML and performance analysis.
-Currently in my MSc in Computer Science at Reichman University, I'm focusing on Reinforcement Learning and NLP.\
+I hold a BASc in Electrical Engineering from the University of British Columbia and I'm currently in my MSc in Computer Science at Reichman University, focusing on Reinforcement Learning.\
 I have an interdisciplinary mindset and bring experience and know-how from across the spectrum of applied research - from theory and analysis to full-stack development and SW engineering. I'm able to discuss, theorize, and plan - and then go build it. I enjoy all parts of the process.
 Previously, I worked on Autonomous Driving at **General Motors**, developing advanced analytical tools and workflows for evaluating the performance of various components of the AV stack.
