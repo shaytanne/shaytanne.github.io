@@ -17,7 +17,7 @@ permalink: /
 
 </div>
 
-Hello, I'm **Shay**.\
+Hello, I'm **Shay**.
 
 I am a **Software & Algorithm Engineer** specializing in ML and performance analysis.
 Currently in my MSc in Computer Science at Reichman University, I'm focusing on Reinforcement Learning and NLP.\
