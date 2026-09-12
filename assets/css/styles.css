@@ -1,21 +1,131 @@
-/* --- VARIABLES --- */
+/* --- VARIABLES (Default: Scholarly Slate & Parchment) --- */
 :root {
-    --bg-color: #f8f9fa;
+    --bg-color: #fcfbfa;
+    --sidebar-bg: #f6f3ec;
+    --card-bg: #ffffff;
+    --text-color: #2c2e32;
+    --text-muted: #64686e;
+    --heading-color: #141618;
+    --link-color: #2b6cb0;
+    --border-color: #e5dfd4;
+    --font-heading: 'Lora', Georgia, serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --heading-letter-spacing: -0.01em;
+    --heading-weight: 600;
+    --tag-bg: #ede7dc;
+    --tag-text: #534537;
+    --tag-border: #ded3c2;
+    --badge-bg: #e5dfd2;
+    --badge-text: #4d3e30;
+    --callout-bg: #fdfcf9;
+    --btn-bg: #f2f7fc;
+    --btn-border: #d3e3f4;
+}
+
+/* VARIANT 1: Warm Terracotta & Linen (Modern Hybrid) */
+[data-theme="warm-terracotta"] {
+    --bg-color: #faf7f2;
     --sidebar-bg: #ffffff;
-    --text-color: #333333;
-    --heading-color: #111111;
-    --link-color: #0077cc;
-    --border-color: #eaeaea;
+    --card-bg: #ffffff;
+    --text-color: #38322c;
+    --text-muted: #6e645a;
+    --heading-color: #1e1915;
+    --link-color: #b85428;
+    --border-color: #e8e1d5;
+    --font-heading: 'Lora', Georgia, serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --heading-letter-spacing: -0.01em;
+    --heading-weight: 600;
+    --tag-bg: #f2ece2;
+    --tag-text: #534537;
+    --tag-border: #ded4c4;
+    --badge-bg: #ebdfce;
+    --badge-text: #4d3e30;
+    --callout-bg: #fdfbf7;
+    --btn-bg: #fdf6f0;
+    --btn-border: #edd2c2;
+}
+
+/* VARIANT 2: Tuscan Amber & Cream (Full Literary Lora) */
+[data-theme="tuscan-editorial"] {
+    --bg-color: #fbf9f4;
+    --sidebar-bg: #f7f2e8;
+    --card-bg: #ffffff;
+    --text-color: #2e2823;
+    --text-muted: #695e55;
+    --heading-color: #171310;
+    --link-color: #c06122;
+    --border-color: #e9dfd1;
+    --font-heading: 'Lora', Georgia, serif;
+    --font-body: 'Lora', Georgia, serif;
+    --heading-letter-spacing: 0;
+    --heading-weight: 600;
+    --tag-bg: #f3eae0;
+    --tag-text: #4c3f35;
+    --tag-border: #dfd2c1;
+    --badge-bg: #eddccb;
+    --badge-text: #45372c;
+    --callout-bg: #fbf8f2;
+    --btn-bg: #fcf4ec;
+    --btn-border: #eed5c2;
+}
+
+/* VARIANT 3: Sage & Sandstone (Nordic Earth) */
+[data-theme="sage-sandstone"] {
+    --bg-color: #f8f7f3;
+    --sidebar-bg: #ffffff;
+    --card-bg: #ffffff;
+    --text-color: #303331;
+    --text-muted: #616763;
+    --heading-color: #181c19;
+    --link-color: #2d6a4f;
+    --border-color: #e1ded6;
+    --font-heading: 'Lora', Georgia, serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --heading-letter-spacing: -0.01em;
+    --heading-weight: 600;
+    --tag-bg: #e9ece4;
+    --tag-text: #36423b;
+    --tag-border: #d2d8cb;
+    --badge-bg: #dfe4d8;
+    --badge-text: #313d36;
+    --callout-bg: #fafbf9;
+    --btn-bg: #f0f6f2;
+    --btn-border: #cbe3d5;
+}
+
+/* VARIANT 4: Scholarly Slate & Parchment (Academic Precision) */
+[data-theme="warm-slate"] {
+    --bg-color: #fcfbfa;
+    --sidebar-bg: #f6f3ec;
+    --card-bg: #ffffff;
+    --text-color: #2c2e32;
+    --text-muted: #64686e;
+    --heading-color: #141618;
+    --link-color: #2b6cb0;
+    --border-color: #e5dfd4;
+    --font-heading: 'Lora', Georgia, serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --heading-letter-spacing: -0.01em;
+    --heading-weight: 600;
+    --tag-bg: #ede7dc;
+    --tag-text: #534537;
+    --tag-border: #ded3c2;
+    --badge-bg: #e5dfd2;
+    --badge-text: #4d3e30;
+    --callout-bg: #fdfcf9;
+    --btn-bg: #f2f7fc;
+    --btn-border: #d3e3f4;
 }
 
 /* GLOBAL RESET */
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    /* font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; */
-    font-family: "Trebuchet MS", Helvetica, -apple-system, BlinkMacSystemFont,sans-serif;
+    font-family: var(--font-body);
     line-height: 1.6;
     margin: 0;
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 a { color: var(--link-color); text-decoration: none; transition: color 0.2s; }
@@ -47,9 +157,9 @@ a:hover { text-decoration: underline; }
     font-weight: 700;
     color: var(--heading-color);
     margin-bottom: 5px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: var(--font-heading);
 }
-.sidebar-title { font-size: 0.9rem; color: #666; margin-bottom: 40px; }
+.sidebar-title { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 40px; }
 
 .nav-list {
     list-style: none;
@@ -59,8 +169,9 @@ a:hover { text-decoration: underline; }
     flex-direction: column;
     gap: 12px;
 }
-.nav-list a { color: #555; font-weight: 500; }
+.nav-list a { color: var(--text-muted); font-weight: 500; }
 .nav-list a:hover { color: var(--link-color); }
+.nav-list a.active { color: var(--link-color); font-weight: 700; }
 
 .sidebar-socials {
     margin-top: auto;
@@ -70,6 +181,8 @@ a:hover { text-decoration: underline; }
     gap: 15px;
     font-size: 1.2rem;
 }
+.sidebar-socials a { color: var(--text-muted); }
+.sidebar-socials a:hover { color: var(--link-color); }
 
 /* --- MAIN CONTENT --- */
 .main-content {
@@ -81,10 +194,9 @@ a:hover { text-decoration: underline; }
 /* MODERN HEADERS */
 h1, h2, h3 {
     color: var(--heading-color);
-    /* font-family: 'Inter', sans-serif; */
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    letter-spacing: -0.03em; 
-    font-weight: 800;
+    font-family: var(--font-heading);
+    letter-spacing: var(--heading-letter-spacing, -0.02em); 
+    font-weight: var(--heading-weight, 700);
 }
 
 h1 { font-size: 3rem; margin-bottom: 10px; text-align: center; } /* Big centered Title */
@@ -114,6 +226,287 @@ h2 { font-size: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bo
     object-fit: cover;
     border: 5px solid #fff;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+/* --- CV SPECIFIC STYLES --- */
+.cv-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cv-header h1 {
+    margin-bottom: 6px;
+}
+.cv-subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 12px;
+}
+.cv-contact-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 16px;
+}
+.cv-contact-bar span.sep {
+    color: #bbb;
+}
+.cv-download-bar {
+    margin-top: 14px;
+}
+.cv-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background-color: var(--sidebar-bg);
+    color: var(--link-color);
+    border: 1px solid var(--link-color);
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+.cv-download-btn:hover {
+    background-color: var(--link-color);
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 119, 204, 0.2);
+}
+
+/* --- SKILLS ENTRIES (CV Page) --- */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 18px 0 28px 0;
+}
+
+.skills-entry {
+    line-height: 2;
+    margin: 0;
+}
+
+.skills-entry strong {
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+.skills-list {
+    margin: 18px 0 24px 0;
+    padding-left: 20px;
+}
+
+.skills-list li {
+    margin-bottom: 14px;
+    line-height: 2;
+}
+
+.skills-list li strong {
+    color: var(--heading-color);
+}
+
+/* --- CV ENTRY HEADER (Title + Inline Date) --- */
+.cv-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+    margin-bottom: 6px;
+}
+
+.cv-entry-header strong {
+    font-size: 1.05rem;
+    color: var(--heading-color);
+}
+
+.cv-entry-date {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.cv-entry-desc {
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+/* --- PROJECT / RESEARCH CARDS --- */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: var(--card-bg, var(--sidebar-bg));
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 28px;
+    box-shadow: 0 1px 3px rgba(30, 25, 20, 0.05), 0 6px 16px rgba(30, 25, 20, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 25, 20, 0.08), 0 12px 24px rgba(30, 25, 20, 0.08);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.project-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    line-height: 1.3;
+}
+
+.project-affiliation {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.project-date {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--badge-text);
+    background-color: var(--badge-bg);
+    padding: 3px 10px;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 16px 0;
+}
+
+.tag-list.inline,
+.tag-list-inline {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0 0 0 6px;
+    vertical-align: middle;
+}
+
+.tag {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--tag-text);
+    background-color: var(--tag-bg);
+    border: 1px solid var(--tag-border);
+    padding: 2px 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.project-body {
+    color: var(--text-color);
+    font-size: 0.98rem;
+    line-height: 1.65;
+}
+
+.project-body p {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.project-body ul {
+    margin: 8px 0 16px 20px;
+    padding: 0;
+}
+
+.project-body li {
+    margin-bottom: 6px;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-color);
+}
+
+.project-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--link-color);
+    padding: 5px 12px;
+    border-radius: 5px;
+    background: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    transition: all 0.2s ease;
+}
+
+.project-btn:hover {
+    background-color: var(--link-color);
+    color: #ffffff;
+    border-color: var(--link-color);
+    text-decoration: none;
+}
+
+.publication-callout {
+    background-color: var(--callout-bg);
+    border-left: 3px solid var(--link-color);
+    padding: 14px 18px;
+    margin-top: 18px;
+    border-radius: 0 6px 6px 0;
+    border-top: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.publication-callout h4 {
+    margin: 0 0 10px 0;
+    font-size: 0.95rem;
+    color: var(--heading-color);
+}
+
+.publication-item {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.publication-item:last-child {
+    margin-bottom: 0;
+}
+
+.publication-disclaimer {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 8px;
 }
 
 /* --- MOBILE --- */

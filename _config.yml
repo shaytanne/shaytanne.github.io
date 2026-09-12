@@ -1,0 +1,31 @@
+# Site Settings
+title: Shay Tanne
+tagline: ML Engineer
+description: "Personal portfolio, research projects, and CV of Shay Tanne — ML Engineer."
+url: "https://shaytanne.github.io"
+baseurl: ""
+
+# Author Details
+author:
+  name: Shay Tanne
+  email: shaytanne1@gmail.com
+  github: shaytanne
+  linkedin: shay-tanne
+
+# Build Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# GitHub Pages Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
