@@ -23,7 +23,7 @@ Hello, I'm **Shay**.
 
 I am a **Machine Learning Engineer** specializing in applied research, algorithm development, and building ML systems.
 
-Currently, I'm pursuing my MSc in Computer Science at Reichman University, focusing on **natural language processing and reinforcement learning**. I also hold a BASc in Electrical Engineering from the University of British Columbia.
+Currently, I'm pursuing my MSc in Computer Science at Reichman University, focusing on **natural language processing and reinforcement learning**. I also hold a BASc (Bachelor of Applied Science) in Electrical Engineering from the University of British Columbia, Vancouver.
 
 I have an interdisciplinary mindset and mild obsession with how technology can be put to _good_ use in the real world. Things I care about from a (not just) technological standpoint: the health & wellbeing of people & communities, the planet, democracy, and advancing science.
 
